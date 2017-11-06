@@ -60,7 +60,7 @@ function searchElastic(data, ctx) {
     let url = "http://localhost:9200/tax*/_search"                                              //在所有Tax前缀的索引的所有类型中查找
                 + "?size=" + size                                                               // 每页返回条数
                 + (from ? "&from=" + from : "")                                                 // 分页
-                + "&_source=title,subtitle,date,publisher,url,source,policyType,taxLevel"       // 返回的字段
+                + "&_source=title,subtitle,date,publisher,url,source,policyType,taxLevel"       // 返回的字段(不返回完整内容)
 
     // node-fetch相关说明,详见:
     // https://www.npmjs.com/package/node-fetch
