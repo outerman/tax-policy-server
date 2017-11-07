@@ -12,6 +12,7 @@ const config = ({ services }) => {
 const server = {
     host: "0.0.0.0",
     port: 8000,
+    website: __dirname + "/html/",
     apiRootUrl: "/v1",
     interceptors: [],
     services: {
