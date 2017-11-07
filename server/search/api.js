@@ -49,8 +49,8 @@ function searchElastic(data, ctx) {
 		    }
 		},
 		"highlight": {
-			"pre_tags": ["<tag1>"],
-			"post_tags": ["</tag1>"],
+			"pre_tags": ["<b>"],
+			"post_tags": ["</b>"],
 			"fields": {
 				"content": {}
 			}
